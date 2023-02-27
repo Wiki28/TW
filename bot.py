@@ -22,20 +22,20 @@ moment_worker = []
 
 
 #start
-@client.on(events.NewMessage(pattern="^/start$"))
-async def start(event):
-  await event.reply("^_^ Hey, Welcome To TAG Help Bot's Menu\nI can tag 15,000 Members in Group and 300 Members In Channel.\nNeed Help /help ",
-                    buttons=(
-                      [
-                         Button.url('📣 UPDATES', 'https://t.me/DeeCodeBots'), 
-                         Button.url('⭐SUPPORT', 'https://t.me/DeCodeSupport'), 
-                      ], 
-                      [
-                        Button.url('➕ ADD ME TO YOUR GROUP', 'https://t.me/MEMBER_TAGERBOT?startgroup=true'),   
-                      ]
-                   ), 
-                    link_preview=False
-                   )
+#@client.on(events.NewMessage(pattern="^/start$"))
+#async def start(event):
+#  await event.reply("^_^ Hey, Welcome To TAG Help Bot's Menu\nI can tag 15,000 Members in Group and 300 Members In Channel.\nNeed Help /help ",
+#                    buttons=(
+#                      [
+#                         Button.url('📣 UPDATES', 'https://t.me/DeeCodeBots'), 
+#                         Button.url('⭐SUPPORT', 'https://t.me/DeCodeSupport'), 
+#                      ], 
+#                      [
+#                        Button.url('➕ ADD ME TO YOUR GROUP', 'https://t.me/MEMBER_TAGERBOT?startgroup=true'),   
+#                      ]
+#                   ), 
+#                    link_preview=False
+#                   )
 
 #help
 @client.on(events.NewMessage(pattern="^/help$"))
